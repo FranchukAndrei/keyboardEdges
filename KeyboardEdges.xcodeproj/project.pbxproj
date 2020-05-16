@@ -13,7 +13,35 @@
 		900AB2512470142000B65E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900AB2502470142000B65E49 /* Assets.xcassets */; };
 		900AB2542470142000B65E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900AB2532470142000B65E49 /* Preview Assets.xcassets */; };
 		900AB2572470142000B65E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900AB2552470142000B65E49 /* LaunchScreen.storyboard */; };
+		900AB2652470144000B65E49 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900AB2642470144000B65E49 /* KeyboardViewController.swift */; };
+		900AB2692470144000B65E49 /* CircleDrag.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 900AB2622470144000B65E49 /* CircleDrag.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		900AB26F247014E100B65E49 /* SwiftUIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900AB26E247014E100B65E49 /* SwiftUIContainer.swift */; };
+		900AB270247014E100B65E49 /* SwiftUIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900AB26E247014E100B65E49 /* SwiftUIContainer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		900AB2672470144000B65E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900AB23F2470141700B65E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900AB2612470144000B65E49;
+			remoteInfo = CircleDrag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		900AB26D2470144000B65E49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				900AB2692470144000B65E49 /* CircleDrag.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		900AB2472470141700B65E49 /* KeyboardEdges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardEdges.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,21 @@
 		900AB2532470142000B65E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		900AB2562470142000B65E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900AB2582470142000B65E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900AB2622470144000B65E49 /* CircleDrag.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CircleDrag.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		900AB2642470144000B65E49 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		900AB2662470144000B65E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900AB26E247014E100B65E49 /* SwiftUIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		900AB2442470141700B65E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900AB25F2470144000B65E49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				900AB2492470141700B65E49 /* KeyboardEdges */,
+				900AB2632470144000B65E49 /* CircleDrag */,
 				900AB2482470141700B65E49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				900AB2472470141700B65E49 /* KeyboardEdges.app */,
+				900AB2622470144000B65E49 /* CircleDrag.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +100,7 @@
 				900AB24A2470141700B65E49 /* AppDelegate.swift */,
 				900AB24C2470141700B65E49 /* SceneDelegate.swift */,
 				900AB24E2470141700B65E49 /* ContentView.swift */,
+				900AB26E247014E100B65E49 /* SwiftUIContainer.swift */,
 				900AB2502470142000B65E49 /* Assets.xcassets */,
 				900AB2552470142000B65E49 /* LaunchScreen.storyboard */,
 				900AB2582470142000B65E49 /* Info.plist */,
@@ -75,6 +117,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		900AB2632470144000B65E49 /* CircleDrag */ = {
+			isa = PBXGroup;
+			children = (
+				900AB2642470144000B65E49 /* KeyboardViewController.swift */,
+				900AB2662470144000B65E49 /* Info.plist */,
+			);
+			path = CircleDrag;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +136,34 @@
 				900AB2432470141700B65E49 /* Sources */,
 				900AB2442470141700B65E49 /* Frameworks */,
 				900AB2452470141700B65E49 /* Resources */,
+				900AB26D2470144000B65E49 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				900AB2682470144000B65E49 /* PBXTargetDependency */,
 			);
 			name = KeyboardEdges;
 			productName = KeyboardEdges;
 			productReference = 900AB2472470141700B65E49 /* KeyboardEdges.app */;
 			productType = "com.apple.product-type.application";
+		};
+		900AB2612470144000B65E49 /* CircleDrag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900AB26A2470144000B65E49 /* Build configuration list for PBXNativeTarget "CircleDrag" */;
+			buildPhases = (
+				900AB25E2470144000B65E49 /* Sources */,
+				900AB25F2470144000B65E49 /* Frameworks */,
+				900AB2602470144000B65E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleDrag;
+			productName = CircleDrag;
+			productReference = 900AB2622470144000B65E49 /* CircleDrag.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +176,9 @@
 				ORGANIZATIONNAME = "Франчук Андрей";
 				TargetAttributes = {
 					900AB2462470141700B65E49 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					900AB2612470144000B65E49 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -124,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				900AB2462470141700B65E49 /* KeyboardEdges */,
+				900AB2612470144000B65E49 /* CircleDrag */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		900AB2602470144000B65E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,10 +230,28 @@
 				900AB24B2470141700B65E49 /* AppDelegate.swift in Sources */,
 				900AB24D2470141700B65E49 /* SceneDelegate.swift in Sources */,
 				900AB24F2470141700B65E49 /* ContentView.swift in Sources */,
+				900AB26F247014E100B65E49 /* SwiftUIContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900AB25E2470144000B65E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900AB2652470144000B65E49 /* KeyboardViewController.swift in Sources */,
+				900AB270247014E100B65E49 /* SwiftUIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		900AB2682470144000B65E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 900AB2612470144000B65E49 /* CircleDrag */;
+			targetProxy = 900AB2672470144000B65E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		900AB2552470142000B65E49 /* LaunchScreen.storyboard */ = {
@@ -283,6 +382,7 @@
 		900AB25C2470142000B65E49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"KeyboardEdges/Preview Content\"";
@@ -303,6 +403,7 @@
 		900AB25D2470142000B65E49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"KeyboardEdges/Preview Content\"";
@@ -315,6 +416,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Semantic.KeyboardEdges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		900AB26B2470144000B65E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HKH9MF246;
+				INFOPLIST_FILE = CircleDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Semantic.KeyboardEdges.CircleDrag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		900AB26C2470144000B65E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HKH9MF246;
+				INFOPLIST_FILE = CircleDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Semantic.KeyboardEdges.CircleDrag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +476,15 @@
 			buildConfigurations = (
 				900AB25C2470142000B65E49 /* Debug */,
 				900AB25D2470142000B65E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900AB26A2470144000B65E49 /* Build configuration list for PBXNativeTarget "CircleDrag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900AB26B2470144000B65E49 /* Debug */,
+				900AB26C2470144000B65E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
